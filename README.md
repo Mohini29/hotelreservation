@@ -25,7 +25,7 @@ echo $JAVA_HOME
 ```
 ## Running the Application
 
-Run HotelReservation.java file and it will prompt for inputs.  
+Run HotelReservation.java file and it will prompt for input.  
 Input:   
 Enter the number of rooms in a hotel.  
 Enter the start date and end date for room reservation.  
@@ -37,9 +37,9 @@ Accept/Decline - Based on the availability
 
 ## Running the tests
 
-Run the HotelReservationTest.java file. There are five test case scenarios mentioned below.  
-Format: (Start Date, End Date) - Result(Accept/Decline)
-1a/1b: Requests outside our planning period are declined (Size=1)    
+Run the HotelReservationTest.java file. There are five test case scenarios mentioned below.    
+Format: (Start Date, End Date) - Result(Accept/Decline)  
+1a/1b: Requests outside our planning period are declined (Size=1)      
   (-4,2)  -  Decline  
   (200,400) -  Decline  
    

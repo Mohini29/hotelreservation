@@ -11,6 +11,9 @@ import static org.junit.Assert.*;
  */
 public class HotelReservationTest {
 
+	/**
+	 * Test whether requests outside the planning period are declined or not
+	 */
 	@Test
 	public void testCheckAvailabilityTestOne() {
 		HotelReservation.hotelSize = 1;
@@ -23,6 +26,9 @@ public class HotelReservationTest {
 			assertFalse(HotelReservation.checkAvailability(200, 400, bookHotel));
 	}
 
+	/**
+	 * Requests are accepted for hotel with 3 rooms
+	 */
 	@Test
 	public void testCheckAvailabilityTestTwo() {
 		HotelReservation.hotelSize = 3;
@@ -48,6 +54,9 @@ public class HotelReservationTest {
 
 	}
 	
+	/**
+	 * Requests are declined for hotel with 3 rooms
+	 */
 	@Test
 	public void testCheckAvailabilityTestThree() {
 		HotelReservation.hotelSize = 3;
@@ -66,6 +75,9 @@ public class HotelReservationTest {
 			assertFalse(HotelReservation.checkAvailability(0, 15, bookHotel));
 	}
 	
+	/**
+	 * Requests can be accepted after a decline
+	 */
 	@Test
 	public void testCheckAvailabilityTestFour() {
 		HotelReservation.hotelSize = 3;
@@ -87,6 +99,9 @@ public class HotelReservationTest {
 			assertTrue(HotelReservation.checkAvailability(4, 9, bookHotel));
 	}
 	
+	/**
+	 * Complex Requests with multiple dates
+	 */
 	@Test
 	public void testCheckAvailabilityTestFive() {
 		HotelReservation.hotelSize = 2;
